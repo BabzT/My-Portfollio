@@ -7,6 +7,7 @@
             </div>
             <h1 class="text-3xl font-bold mt-7">Babatunde Akinwobi</h1>
             <p class="text-2xl">Software Engineer</p>
+            <p class="text-sm">(Frontend Web Developer)</p>
             <div class="social">
                 <a href="https://github.com/BabzT"><i class='fab fa-github'></i></a>
                 <a href="https://twitter.com/BabzTech?t=CEGTG20tavLWBk2OofKTg&s=09"><i class='fab fa-twitter'></i></a>
