@@ -8,10 +8,10 @@
             <h1 class="text-3xl font-bold mt-7">Babatunde Akinwobi</h1>
             <p class="text-2xl">Software Engineer</p>
             <div class="social">
-                <a href="#"><i class='fab fa-github'></i></a>
-                <a href="#"><i class='fab fa-twitter'></i></a>
-                <a href="#"><i class='fab fa-linkedin'></i></a>
-                <a href="#"><i class='fab fa-whatsapp'></i></a>
+                <a href="https://github.com/BabzT"><i class='fab fa-github'></i></a>
+                <a href="https://twitter.com/BabzTech?t=CEGTG20tavLWBk2OofKTg&s=09"><i class='fab fa-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/babatunde-hezekiah-9976b5195"><i class='fab fa-linkedin'></i></a>
+                <a href="mailto:babatundehezekiah7@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
 
@@ -33,10 +33,10 @@
         </div>
 
         <div class="profilebtns">
-            <a class="download" href="#">Download CV 
+            <a class="download" href="/babatunde.pdf" download>Download CV 
                 <span class="material-symbols-outlined ml-1">file_download</span>
             </a>
-            <a class="contact" href="#">Contact Me</a>
+            <a class="contact" href="tel:+2348146825042">Contact Me</a>
         </div>
 
         <div class="tabbtns">
@@ -77,7 +77,6 @@ import SkillsComp from '@/components/Skills.vue'
                 } else{
                     this.greeting = 'Good Evening'
                 }
-                console.log(this.time)
             },
             gotoPortfolio(){
                 this.activeTab = 'PortfolioComp';
