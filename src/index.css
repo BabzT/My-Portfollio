@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply box-border font-Poppins scroll-smooth
+}
+.app{
+    @apply min-h-screen bg-[#E9EBEC] dark:bg-[#0C151D] py-4 text-[#3D3D3D] dark:text-[#F1F2F4] px-3
+}
+.mode_switch{
+    @apply w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-[#171F26] mx-auto 
+}
+.dark_icon{
+    @apply text-3xl font-bold
+}
+.light_icon{
+    @apply text-white text-3xl font-bold
+}
+
+/* Landing Page */
+.greeting{
+    @apply mx-auto w-fit px-7 py-3 mt-4 rounded-xl font-bold text-lg dark:bg-[#171F26] bg-white shadow-2xl
+}
+.userdiv{
+    @apply flex flex-col items-center mt-7
+}
+.profilepic_circle{
+    @apply w-36 h-36 rounded-full border-4 border-yellow-400 
+}
+.social{
+    @apply w-[75%] text-2xl my-6 flex items-center justify-between
+}
+.profilefacts{
+    @apply flex items-center justify-between
+}
+.experience{
+    @apply w-[30%] text-center
+}
+.experience h1{
+    @apply text-lg font-bold
+}
+.experience p{
+    @apply text-sm
+}
+.profilebtns{
+    @apply flex items-center justify-evenly mt-8 py-2
+}
+.download{
+    @apply bg-[#FFE071] px-5 py-3 text-sm flex items-center text-black rounded-lg
+}
+.contact{
+    @apply bg-[#171F26] px-5 py-3 text-lg text-white rounded-lg
+}
+.tabbtns{
+    @apply w-11/12 dark:bg-[#171F26] rounded-lg mx-auto p-2 my-7 text-lg font-medium flex items-center justify-between
+    bg-white
+}
+.portfoliobtn{
+    @apply w-32 py-3
+}
+.skillsbtn{
+    @apply w-32 py-3
+}
+.active{
+    @apply dark:bg-[#0C151D] bg-[#D7D7D7] rounded-lg
+}
+
+/* Skills */
+.skillsdiv{
+    @apply flex flex-col items-center
+}
+.techdiv{
+    @apply text-center w-full my-7
+}
+.tech_elememts{
+    @apply flex flex-wrap
+}
+.tech_elememts p{
+    @apply mx-4 mt-2 text-lg font-medium flex items-center
+}
+.icon{
+    @apply text-2xl mr-2
+}
+
+/* Portfolio */
+.portfolio{
+    @apply mb-5
+}
+.work{
+    @apply mb-10
+}
+.click{
+    @apply mt-2 text-lg font-medium
+}
+/* .other_work{
+    @apply
+} */
+.load_more{
+    @apply mx-auto w-fit py-3 px-5 text-black font-bold rounded-xl bg-[#FFE071]
+}
