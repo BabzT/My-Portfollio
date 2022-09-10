@@ -65,10 +65,10 @@
     bg-white relative
 }
 .portfoliobtn{
-    @apply w-32 py-3 z-40
+    @apply w-32 py-3 z-40 
 }
 .skillsbtn{
-    @apply w-32 py-3 z-40
+    @apply w-32  py-3 z-40
 }
 .active{
     @apply dark:bg-[#0C151D] bg-[#D7D7D7] rounded-lg

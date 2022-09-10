@@ -11,8 +11,8 @@ module.exports = {
         Poppins:['Poppins']
       },
       animation: {
-        moveright: 'moveright .6s linear',
-        moveleft: 'moveleft .6s linear',
+        moveright: 'moveright .4s linear',
+        moveleft: 'moveleft .4s linear',
       },
       keyframes:{
         moveright:{
