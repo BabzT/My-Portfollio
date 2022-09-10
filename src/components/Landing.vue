@@ -5,14 +5,16 @@
             <div class="profilepic_circle">
                 <img class="w-full h-full object-cover rounded-full" src="@/assets/babz.jpg" alt="">
             </div>
-            <h1 class="text-3xl font-bold mt-7">Babatunde Akinwobi</h1>
-            <p class="text-2xl">Software Engineer</p>
-            <p class="text-sm">(Frontend Web Developer)</p>
-            <div class="social">
-                <a href="https://github.com/BabzT"><i class='fab fa-github'></i></a>
-                <a href="https://twitter.com/BabzTech?t=CEGTG20tavLWBk2OofKTg&s=09"><i class='fab fa-twitter'></i></a>
-                <a href="https://www.linkedin.com/in/babatunde-hezekiah-9976b5195"><i class='fab fa-linkedin'></i></a>
-                <a href="mailto:babatundehezekiah7@gmail.com"><i class="fas fa-envelope"></i></a>
+            <div class="userinfo">
+                <h1 class="text-3xl font-bold mt-7">Babatunde Akinwobi</h1>
+                <p class="text-2xl">Software Engineer</p>
+                <p class="text-sm">(Frontend Web Developer)</p>
+                <div class="social">
+                    <a href="https://github.com/BabzT"><i class='fab fa-github'></i></a>
+                    <a href="https://twitter.com/BabzTech?t=CEGTG20tavLWBk2OofKTg&s=09"><i class='fab fa-twitter'></i></a>
+                    <a href="https://www.linkedin.com/in/babatunde-hezekiah-9976b5195"><i class='fab fa-linkedin'></i></a>
+                    <a href="mailto:babatundehezekiah7@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </div>
 
@@ -41,8 +43,11 @@
         </div>
 
         <div class="tabbtns">
-            <button :class="{active : portfolio}" @click="gotoPortfolio" class="portfoliobtn">Portfolio</button>
-            <button :class="{active : skills}" @click="gotoSkills" class="skillsbtn">Skills</button>
+            <div class="activebg">
+
+            </div>
+            <button @click="gotoPortfolio" class="portfoliobtn">Portfolio</button>
+            <button @click="gotoSkills" class="skillsbtn">Skills</button>
         </div>
         <component :is="activeTab"/>
     </div>
@@ -60,8 +65,6 @@ import SkillsComp from '@/components/Skills.vue'
         data(){
             return{
                 activeTab:'PortfolioComp',
-                portfolio:true,
-                skills:false,
                 time: new Date().getHours(),
                 greeting:''
             }
@@ -81,13 +84,13 @@ import SkillsComp from '@/components/Skills.vue'
             },
             gotoPortfolio(){
                 this.activeTab = 'PortfolioComp';
-                this.portfolio = true;
-                this.skills = false;
+                document.querySelector('.activebg').classList.add('left')
+                document.querySelector('.activebg').classList.remove('right')
             },
             gotoSkills(){
                 this.activeTab = 'SkillsComp';
-                this.skills = true;
-                this.portfolio = false;
+                document.querySelector('.activebg').classList.remove('left')
+                document.querySelector('.activebg').classList.add('right')
             }
         }
     }

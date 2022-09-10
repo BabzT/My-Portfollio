@@ -9,6 +9,20 @@ module.exports = {
     extend: {
       fontFamily:{
         Poppins:['Poppins']
+      },
+      animation: {
+        moveright: 'moveright .6s linear',
+        moveleft: 'moveleft .6s linear',
+      },
+      keyframes:{
+        moveright:{
+          'from':{left : '0%'},
+          'to':{left: '50%'}
+        },
+        moveleft:{
+          'from':{left : '50%'},
+          'to':{left: '0%'}
+        },
       }
     },
   },
