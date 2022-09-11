@@ -95,3 +95,12 @@ import SkillsComp from '@/components/Skills.vue'
         }
     }
 </script>
+
+<style scoped>
+    .portfoliobtn{
+        -webkit-tap-highlight-color: transparent;
+    }
+    .skillsbtn{
+        -webkit-tap-highlight-color: transparent;
+    }
+</style>
